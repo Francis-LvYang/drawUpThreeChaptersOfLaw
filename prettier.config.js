@@ -8,9 +8,9 @@ module.exports = {
   // 行尾需要有分号
   semi: true,
   // 不使用单引号
-  singleQuote: true,
+  singleQuote: false,
   // jsx 不使用单引号，而使用双引号
-  jsxSingleQuote: false,
+  jsxSingleQuote: true,
   // 末尾不需要逗号
   trailingComma: "none",
   // 大括号内的首尾需要空格
