@@ -1,0 +1,62 @@
+
+$primary-color: #d43c33;
+// 主色调:第一辅色
+$auxiliary-color-first: #086989;
+// 主色调:第二辅色
+$auxiliary-color-second: #09799e;
+
+// 字体色:1号字体色
+$font-color-first: #222;
+// 字体色:2号字体色
+$font-color-second: #444;
+// 字体色:3号字体色
+$font-color-third: #666;
+// 字体色:4号字体色
+$font-color-fourth: #999;
+// 字体色:5号字体色
+$font-color-fifth: #a1a1a1;
+
+// 按钮：渐变_1
+$button-gradient-first: linear-gradient(to right, #04958d, #049068);
+// 按钮：渐变_1点击
+$button-gradient-first-click: linear-gradient(to right, #008a82, #007f5b);
+// 按钮：按钮_1
+$button-color-first: #3881a8;
+// 按钮：按钮_1点击
+$button-color-first-click: #276e94;
+// 按钮：按钮_2
+$button-color-second: #8cb2c9;
+// 按钮：按钮_2点击
+$button-color-second-click: #719db7;
+// 按钮：按钮_3
+$button-color-third: #ff9900;
+// 按钮：按钮_3点击
+$button-color-third-click: #ec9212;
+// 按钮：按钮_4
+$button-color-fourth: #c9c9c9;
+// 按钮：按钮_5
+$button-color-fifth: #199c9b;
+// 按钮：按钮_绿色
+$button-color-green: #069e46;
+
+// 背景色：背景色1
+$background-color-first: #f6f6f6;
+// 背景色：背景色2
+$background-color-second: #eee;
+// 背景色：背景色3
+$background-color-third: #fff;
+// 背景色：背景色4
+$background-color-fourth: #f4fcff;
+// 背景色：遮罩
+$background-color-mask: rgba(#000, 0.5);
+// 遮罩-蓝色主题
+$background-color-blue-mask: rgba(#032d63, 0.7);
+// 遮罩-绿色主题
+$background-color-green-mask: rgba(#004b33, 0.8);
+@mixin text-ellipsis {
+  overflow: hidden;
+  /*文本不会换行*/
+  white-space: nowrap;
+  /*当文本溢出包含元素时，以省略号表示超出的文本*/
+  text-overflow: ellipsis;
+}

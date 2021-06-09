@@ -4,6 +4,16 @@ module.exports = {
   },
   defineConstants: {
   },
+  plugins: [
+    'terser'
+  ],
+  tarser: {
+    enable: true,
+    config: {
+      // 配置项参数
+      sourceMap: true
+    }
+  },
   mini: {},
   h5: {
     /**

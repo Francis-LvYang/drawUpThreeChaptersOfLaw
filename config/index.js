@@ -1,3 +1,4 @@
+const path = require('path')
 const config = {
   projectName: 'myApp',
   date: '2021-6-5',
@@ -11,6 +12,16 @@ const config = {
   outputRoot: 'dist',
   plugins: [],
   defineConstants: {
+  },
+  alias: {
+    '@': path.resolve(__dirname, '..', 'src')
+  },
+  sass: {
+    resource: [
+      'src/assets/styles/variables.scss',
+      'src/assets/styles/base.scss'
+    ],
+    projectDirectory: path.resolve(__dirname, '..')
   },
   copy: {
     patterns: [
