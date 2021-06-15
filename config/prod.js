@@ -1,18 +1,19 @@
+const TerserPlugin = require("terser-webpack-plugin");
 module.exports = {
   env: {
     NODE_ENV: '"production"'
   },
-  defineConstants: {
-  },
-  plugins: [
-    'terser'
-  ],
+  defineConstants: {},
+  plugins: [],
   tarser: {
     enable: true,
     config: {
       // 配置项参数
       sourceMap: true
     }
+  },
+  optimization: {
+    minimizer: [new TerserPlugin()]
   },
   mini: {},
   h5: {
@@ -25,4 +26,4 @@ module.exports = {
      * }
      */
   }
-}
+};

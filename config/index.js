@@ -23,6 +23,13 @@ const config = {
     ],
     projectDirectory: path.resolve(__dirname, '..')
   },
+  tarser: {
+    enable: true,
+    config: {
+      // 配置项参数
+      sourceMap: true
+    }
+  },
   copy: {
     patterns: [
     ],
